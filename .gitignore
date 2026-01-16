@@ -1,0 +1,2 @@
+#Contains all the files that git should not include when staging
+logs/
