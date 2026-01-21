@@ -9,10 +9,12 @@ int main() {
 	int total = 0;
 	int f = 1;
 
-	//get user input
-	printf("Please enter an integer: ");
-	scanf("%d", &n);
-
+	//get validated user input
+	//can only run programme between 1 and 10
+	while (n < 1 || n > 10) {
+		printf("Please enter an integer between 1 and 10: ");
+		scanf("%d", &n);
+	}
 	//fixed loop to calculate summation 
 	for (int i = 0; i <= n; i++) {
 		total = i + total;
