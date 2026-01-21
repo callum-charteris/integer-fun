@@ -1,11 +1,19 @@
 #include <stdio.h>
 
-//Simple c file that calculates running total with a fixed loop of five
+//Simple c file that calculates the sum of an integer 
 
 int main() {
 
-	//variable initialisation
-	int total = 0;
+	//declare and initialise variables
+	int n;
+	int total;
+
+	//get user input
+	printf("Please enter an integer to calculate it's sum of integers: ");
+	scanf("%d", &n);
+
+	//check that the right value has been collected
+	printf("%d\n", n);
 
 	//fixed loop 
 	for (int c = 0; c <= 5; c++) {
