@@ -5,22 +5,21 @@
 int main() {
 
 	//declare and initialise variables
-	int n;
-	int total;
+	int n=0;
+	int total=0;
 
 	//get user input
 	printf("Please enter an integer to calculate it's sum of integers: ");
 	scanf("%d", &n);
 
-	//check that the right value has been collected
-	printf("%d\n", n);
-
-	//fixed loop 
-	for (int c = 0; c <= 5; c++) {
-		total = c + total;
+	//fixed loop to calculate the sum of the users integer 
+	for (int i = 0; i <= n; i++) {
+		total = i + total;
 	}
-
-	printf("The running total of integers up to and including 5 is %d\n", total);
+	
+	//output messages
+	printf("The number you entered was: %d\n", n);
+	printf("The running total of your integers is %d\n", total);
 
 	return 0;
 }
